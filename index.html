@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="icons/web.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>GO TO TOP</title>
+</head>
+<body>
+    <!-- Шапка -->
+    <div class="header_wrapper">
+        <header class="header_container">
+            <div class="logo_wrapper">
+                <div class="logo__img"></div>
+                <div class="logo__text"> <span class="blue">GO TO&nbsp;</span><span class="pink">TOP</span></div>
+            </div>
+            <div class="nav_wrapper">
+                <nav class="nav">
+                    <ul class="nav__ul">
+                        <li class="nav__a"> <a href="#"> ГЛАВНАЯ</a> </li>
+                        <li class="nav__a"> <a href="#"> НОВОСТИ </a> </li>
+                        <li class="nav__a"> <a href="#"> О КОМПАНИИ </a> </li>
+                        <li class="nav__a"> <a href="#"> КОНТАКТЫ </a> </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <!-- Слайдер -->
+    <div class="slider" id="slider">
+        <div class="slider-dark-layer">
+            <div class="slider-container">
+                <button class="slider__button slider__button_left" onclick="buttonLeftPressed()"> < </button>
+                <div class="slider__info">
+                    <h1 class="slider__h1">ваш сайт – главный бизнес-инструмент</h1>
+                    <p class="slider__p">GO TO TOP - Ваш быстрый старт продаж</p>
+                    <a href="#" class="slider__a">о нас</a>
+                </div>
+                <button class="slider__button slider__button_right" onclick="buttonRightPressed()"> > </button>
+            </div>
+        </div>    
+    </div>
+    <!-- Карточки -->
+    <div class="cards_wrapper">
+        <div class="cards_container">
+            <div class="cards__row cards__row_top">
+                <!-- 1.1 -->
+                <div class="card">
+                    <div class="card__img card__img_computer"></div>
+                    <a href="#" class="card__a">
+                        <h3 class="card__h3">
+                            СОЗДАДИМ ПРОДАЮЩИЙ САЙТ
+                        </h3>
+                    </a>
+                    <div class="card__p">Нету сайта? Не беда. Наши специалисты разработают оптимизированный продающий сайт для Вашей компании в минимальные сроки.</div>
+                </div>
+                <!-- 1.2 -->
+                <div class="card">
+                    <div class="card__img card__img_networking2"></div>
+                    <a href="#" class="card__a">
+                        <h3 class="card__h3">
+                            ВЫБЕРЕМ АУДИТОРИЮ
+                        </h3>
+                    </a>
+                    <div class="card__p">Составим аудиторию Ваших потенциальных клиентов для качественных продаж.</div>
+                </div>
+                <!-- 1.3 -->
+                <div class="card">
+                    <div class="card__img card__img_settings"></div>
+                    <a href="#" class="card__a">
+                        <h3 class="card__h3">
+                            НАСТРОИМ СТАТИСТИКУ
+                        </h3>
+                    </a>
+                    <div class="card__p">Настроим статистику сайта, будем анализировать действия пользователей и улучшать функционал.</div>
+                </div>                
+            </div>
+            <div class="cards__row cards__row_bottom">
+                <!-- 2.1 -->
+                <div class="card">
+                    <div class="card__img card__img_networking"></div>
+                    <a href="#" class="card__a">
+                        <h3 class="card__h3">
+                                РАЗОВЬЕМ СОЦ. СЕТИ
+                        </h3>
+                    </a>
+                    <div class="card__p">Для качественных продаж крайне необходимо вести активную деятельность в социалных сетях. Наши специалисты комплексно подойдут к вопросу привлечения клиентов через соц. сети.</div>
+                </div>
+                <!-- 2.2 -->
+                <div class="card">
+                    <div class="card__img card__img_laptop"></div>
+                    <a href="" class="card__a">
+                        <h3 class="card__h3">
+                            МИНИМИЗИРУЕМ БЮДЖЕТ
+                        </h3>
+                    </a>
+                    <div class="card__p">Главное не тратить деньги в пустую. Мы следим за тем, какая реклама дают максимальный результат и стремимся найти самые активные точки продаж для минимизации рекламного бюджета.</div>
+                </div>
+                <!-- 2.3 -->
+                <div class="card">
+                    <div class="card__img card__img_startup"></div>
+                    <a href="" class="card__a">
+                        <h3 class="card__h3">
+                                ПРИВЛЕЧЕМ КЛИЕНТОВ
+                        </h3>
+                    </a>
+                    <div class="card__p">Наша цель - максимальное количество киентов для Ваших продаж. Мы работаем по всем направления в интернет-маркетинге для того, чтобы найти именно Ваших потенциальных клиентов!</div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Баннер -->
+    <div class="banner">
+        <div class="banner__container">
+            <p class="banner__text"> ХОТИТЕ НАЧАТЬ ЗАРАБАТЫВАТЬ В ИНТЕРНЕТЕ? ПРОСТО СВЯЖИТЕСЬ С НАМИ</p>
+            <a href="" class="banner__button"> СВЯЗАТЬСЯ </a>
+        </div>
+    </div>
+    <!-- Последние работы -->
+    <div class="recent-projects">
+        <div class="recent-projects__wrapper">
+            <h2 class="recent-projects__h2"> ПОСЛЕДНИЕ РАБОТЫ </h2>
+            <div class="recent-projects__container"></div>
+            <div class="recent-projects__line"></div>
+            <div class="recent-projects__covers-container">
+                <div class="recent-projects__project-cover recent-projects__project-cover_site-1"></div>
+                <div class="recent-projects__project-cover recent-projects__project-cover_site-2"></div>
+                <div class="recent-projects__project-cover recent-projects__project-cover_site-3"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Факты -->
+    <div class="facts">
+        <div class="facts_wrapper">
+            <div class="fact">
+                <p class="fact__number">456</p>
+                <div class="fact__line"></div>
+                <p class="fact__about">счастливых клиентов</p>
+            </div>
+            <div class="fact">
+                <p class="fact__number">322</p>
+                <div class="fact__line"></div>
+                <p class="fact__about">проекта</p>
+            </div>
+            <div class="fact">
+                <p class="fact__number">290</p>
+                <div class="fact__line"></div>
+                <p class="fact__about">сайтов в топ</p>
+            </div>
+            <div class="fact">
+                <p class="fact__number">132</p>
+                <div class="fact__line"></div>
+                <p class="fact__about">сайта разработано</p>
+            </div>
+        </div>
+    </div>
+    <!-- Новости -->
+    <div class="news">
+        <div class="news__wrapper">
+            <h2 class="news__h2"> НОВОСТИ </h2>
+            <div class="news__line"></div>
+            <div class="news__cards-container">
+                <!-- Новость 1 -->
+                <div class="news__card">
+                    <div class="news__img news__img_marketing"></div>
+                    <div class="news__text-area">
+                        <p class="news__p"><span class="news__date">1 января 2018</span><br>Мы начинаем этот год с наших новых разработок в области маркетинга. Ждем Вас на наших тренингах и лекциях</p>
+                        <div class="news__more"><a href="#" class="news__a"> подробнее </a></div>
+                    </div>
+                </div>
+                <!-- Новость 2 -->
+                <div class="news__card">
+                    <div class="news__img news__img_relax"></div>
+                    <div class="news__text-area">
+                        <p class="news__p"><span class="news__date">2 марта 2018</span><br>Мы работаем, вы отдыхаете! Теперь мы предоставляем полный спектр услуг по привлечению клиентов!</p>
+                        <div class="news__more"><a href="#" class="news__a"> подробнее </a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Напишите нам -->
+    <div class="contact-us">
+        <div class="contact-us__wrapper">
+            <h2 class="contact-us__h2"> НАПИШИТЕ НАМ </h2>
+            <div class="contact-us__line"></div>
+            <div class="form-wrapper">
+                <form method="GET" action="">
+                    <div class="input-wrapper">
+                        <div class="form__field">
+                            <input class="form__input" type="text" placeholder="ФИО">
+                            <input class="form__input" type="text" placeholder="E-mail">
+                            <input class="form__input" type="tel" placeholder="Телефон">
+                        </div>
+                        <textarea class="form__textarea" name="" id="" cols="30" rows="10" placeholder="Ваще сообщение"></textarea>
+                    </div>
+                    <button class="form__button"> отправить вопрос </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Подвал -->
+    <div class="footer-wrapper">
+        <div class="footer-top">
+            <div class="footer-top__container">
+                <div class="footer-top__section">
+                    <h3 class="footer-top__h3"> о нас </h3>
+                    <p class="footer-top__text">Мы оказываем всестороннюю помощь компаниям и физическим лицам — собственникам веб-ресурсов, которые готовы использовать сайт, как эффективный рекламный инструмент, позволяющий развивать бизнес.</p>
+                </div>
+                <div class="footer-top__section">
+                    <h3 class="footer-top__h3"> новые разработки </h3>
+                    <ul class="footer-top__text footer-top__ul">
+                        <li>Новые разработки</li>
+                        <li>Мы работаем, вы отдыаете</li>
+                    </ul>
+                </div>
+                <div class="footer-top__section">
+                        <h3 class="footer-top__h3"> контакты </h3>
+                        <ul class="footer-top__text footer-top__ul">
+                            <li><div class="footer-top__li-img"></div> Москва, Большая Спасская 12</li>
+                            <li><div class="footer-top__li-img"></div> 8 (495) 626-46-00</li>
+                            <li><div class="footer-top__li-img"></div> info@gototop.com</li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            2018 все права защищены
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
